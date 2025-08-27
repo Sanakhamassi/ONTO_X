@@ -81,3 +81,16 @@ If you query **"WRONG label"**, the explorer return:
 If you query **"Noparent leaf"**, the explorer return:  
 📸 Example Screenshot:  
 ![Ancestor Extraction Example](./screenshots/orphan.png)
+
+
+---
+
+## 🌐 Deployment  
+
+The Onto-X Explorer is deployed online using **Streamlit Cloud** and hosted via **GitHub**.  
+This means you don’t need to install anything locally to try it out — you can simply open it in your browser.  
+
+👉 **Access the live app here:**  
+🔗 [Onto-X Explorer – Ancestors](https://onto-x-explorer-ancesotors.streamlit.app/)  
+
+You can test entity lookups, explore ancestor trees, and experiment with edge cases directly in the deployed app.  
