@@ -76,4 +76,7 @@ if entity_label:
     else:
         st.subheader(f"📑 Ancestors for '{entity_label}':")
         for label, depth in sorted(relationships.items(), key=lambda x: x[1]):
-            st.write(f"{label}: {depth}")
+            st.write(f"{label} → depth {depth}")
+
+        if len(relationships) == 1:
+            st.info(f"ℹ️ Entity **'{entity_label}'** exists but has no parents (it is a root node).")

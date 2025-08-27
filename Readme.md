@@ -64,3 +64,7 @@ If you query **“GRANULOMA”**, the explorer return:
 If you query **"WRONG label"**, the explorer return:  
 📸 Example Screenshot:  
 ![Ancestor Extraction Example](./screenshots/wrong_label.png)
+
+If you query **"Noparent leaf"**, the explorer return:  
+📸 Example Screenshot:  
+![Ancestor Extraction Example](./screenshots/orphan.png)
