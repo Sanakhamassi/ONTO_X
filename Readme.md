@@ -45,7 +45,7 @@ Below are common **data issues** and how the system handles them:
 ### 🔬 Exploring Exceptions in Detail
 
 All of the above exception cases are **analyzed in depth in `data.ipynb`**.  
-That notebook documents how the dataset was cleaned, the checks applied (e.g., missing labels, duplicate IDs)
+That notebook documents how checks are applied (e.g., missing labels, duplicate IDs).
 
 👨‍💻 **For IT teams:**
 
