@@ -89,10 +89,10 @@ If you query **"Noparent leaf"**, the explorer return:
 - **Depth 2** → Grandparents (parents of parents).  
 - **Depth 3+** → Higher-level ancestors in the hierarchy.  
 For example:  
-- GRANULOMA → depth 0
--Inflammatory Lesion → depth 1
--Pathological Structure → depth 2
--Anatomical Entity → depth 3
+GRANULOMA → depth 0
+Inflammatory Lesion → depth 1
+Pathological Structure → depth 2
+Anatomical Entity → depth 3
 ---
 
 ## 🌐 Deployment  
