@@ -40,6 +40,19 @@ Below are common **data issues** and how the system handles them:
 
 ---
 
+---
+
+### 🔬 Exploring Exceptions in Detail
+
+All of the above exception cases are **analyzed in depth in `data.ipynb`**.  
+That notebook documents how the dataset was cleaned, the checks applied (e.g., missing labels, duplicate IDs)
+
+👨‍💻 **For IT teams:**
+
+- Open `data.ipynb` in Jupyter or VS Code
+- Run the cells to see how anomalies are detected in the ontology CSV
+- Experiment by modifying rows in the dataset to trigger specific edge cases
+
 ## 🌳 Ancestor Extraction
 
 One of the core features of Onto-X Explorer is **ancestor extraction**.  
