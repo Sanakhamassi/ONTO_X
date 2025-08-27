@@ -34,7 +34,7 @@ Below are common **data issues** and how the system handles them:
 | 🆔 **Empty Class ID**   | Missing unique identifier       | Discard row                                       |
 | 🆔❌ **Duplicate IDs**  | Same ID defined multiple times  | Keep last, log overwrite                          |
 | 🌱 **No Parents**       | Orphan nodes (roots)            | Valid, but flagged                                |
-| 🔄 **Cycle Detected**   | Entity is ancestor of itself    | Halt loading, log error                           |
+| 🔄 **Cycle Detected**   | Entity is ancestor of itself    | BFS                        |
 | 🔗 **Missing Parent**   | Parent ID not found in dataset  | Log warning, ignore parent                        |
 | 🔍 **Label Not Found**  | User query doesn’t exist        | Show Streamlit error box                          |
 
