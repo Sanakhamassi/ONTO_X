@@ -67,13 +67,13 @@ onto = Ontox("./data/onto_x.csv")
 # Streamlit UI better than the cli
 st.title("🧬 Onto-X Explorer")
 
-entity_label = st.text_input("Enter an entity label:")
+entity_label = st.text_input(" 🔍 Enter an entity label:")
 
 if entity_label:
     relationships = onto.get_ancestors(entity_label)
     if not relationships:
         st.error(f"Entity '{entity_label}' not found.")
     else:
-        st.subheader(f"Ancestors for '{entity_label}':")
+        st.subheader(f"📑 Ancestors for '{entity_label}':")
         for label, depth in sorted(relationships.items(), key=lambda x: x[1]):
             st.write(f"{label}: {depth}")
