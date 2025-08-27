@@ -32,7 +32,7 @@ class Ontox:
     def get_ancestors(self, label):
         entity_id = self.label_to_id.get(label.upper())
         if not entity_id:
-            return {}
+            return None
 
         relationships = {entity_id: 0}  
         queue = deque([(entity_id, 0)])  
@@ -71,8 +71,8 @@ entity_label = st.text_input(" 🔍 Enter an entity label:")
 
 if entity_label:
     relationships = onto.get_ancestors(entity_label)
-    if not relationships:
-        st.error(f"Entity '{entity_label}' not found.")
+    if relationships is None:
+        st.error(f"❌ Entity **'{entity_label}'** does not exist in the dataset.")
     else:
         st.subheader(f"📑 Ancestors for '{entity_label}':")
         for label, depth in sorted(relationships.items(), key=lambda x: x[1]):

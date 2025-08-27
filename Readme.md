@@ -57,6 +57,10 @@ When a user enters an entity label, the system:
 
 ### Example
 
-If you query **“Protein”**, the explorer might return:  
+If you query **“GRANULOMA”**, the explorer return:  
 📸 Example Screenshot:  
 ![Ancestor Extraction Example](./screenshots/ance_exp.png)
+
+If you query **"WRONG label"**, the explorer return:  
+📸 Example Screenshot:  
+![Ancestor Extraction Example](./screenshots/wrong_label.png)
